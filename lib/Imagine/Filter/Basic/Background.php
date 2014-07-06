@@ -43,7 +43,7 @@ class Background implements FilterInterface
      * @param null|int[]|BoxInterface $size
      * @param ColorInterface          $color
      */
-    public function __construct(ImagineInterface $imagine, $size = null, ColorInterface $color)
+    public function __construct(ImagineInterface $imagine, ColorInterface $color, $size = null)
     {
         $this->imagine  = $imagine;
         $this->size     = $size;
